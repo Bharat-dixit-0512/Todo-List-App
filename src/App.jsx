@@ -3,7 +3,7 @@ import Navbar from './components/Navbar'
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import { v4 as uuidv4 } from 'uuid';
-
+import Footer from './components/Footer';
 function App() { 
 
   const [todo, setTodo] = useState("")
@@ -73,7 +73,7 @@ function App() {
   return (
     < >
     <Navbar/> 
-       <div className="mx-3 md:container md:mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[80vh] md:w-[35%]">
+       <div className="mx-3 md:container md:mx-auto my-5 rounded-xl p-5 bg-violet-100 min-h-[84vh] md:w-[35%]">
         <h1 className='font-bold text-center text-3xl'>iTask - Manage your todos at one place</h1>
          <div className="addTodo my-5 flex flex-col gap-4">
           <h2 className='text-2xl font-bold'>Add a Todo</h2>
@@ -105,6 +105,7 @@ function App() {
          </div>
         
        </div>
+       <Footer/>
     </>
   )
 }
